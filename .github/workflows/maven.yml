@@ -23,3 +23,12 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install
+    - name: Build & push Docker image
+      uses: thothbot/alpine-jre8
+      with:
+        image: sajansingh333/helloworld23spimage
+        tags: latest
+        registry: registry-url.io
+        dockerfile: Dockerfile.ci
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
