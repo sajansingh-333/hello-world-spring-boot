@@ -27,6 +27,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <finalName>helloworld23spimage</finalName>
+        <finalName>myproject-0.0.1-SNAPSHOT.jar</finalName>
     </build>
 </project>
