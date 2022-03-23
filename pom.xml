@@ -27,6 +27,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>helloworld23spimage</finalName>
     </build>
 </project>
-
