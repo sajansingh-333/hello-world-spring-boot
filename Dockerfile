@@ -1,6 +1,4 @@
-FROM java
-ADD ./target/myproject-0.0.1-SNAPSHOT.jar /myproject-0.0.1-SNAPSHOT.jar
-ADD ./run.sh /run.sh
-RUN chmod a+x /run.sh
+FROM Openjdk11
 EXPOSE 8080:8080
-CMD /run.sh
+ADD target/helloworld23spimage.jar helloworld23spimage.jar
+ENTRYPOINT ["java","-jar","/helloworld23spimage.jar"]
